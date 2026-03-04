@@ -23,8 +23,8 @@ def keep_alive():
     t.start()
 
 # --- CONFIGURATION DU BOT ---
-# Utilise ton nouveau Token fourni
-TOKEN = os.environ.get('BOT_TOKEN', '8603258933:AAHWXfleEXidGCfSFDKt4ZtjNq1h0m0kfkQ')
+# On dit au code de ne chercher le Token QUE dans les variables Render
+TOKEN = os.environ.get('BOT_TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 def charger_confession():
